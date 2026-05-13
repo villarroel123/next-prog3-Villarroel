@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 
 const HomeContainer = () => {
   const [items, setItems] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
   const [errorMsg, setErrorMsg] = useState(false);
 
@@ -31,8 +30,7 @@ console.log("Estado de items:", items);
   return (
     <div>
       <section className=''>
-        {!loading && <CardsGrid items={items} title='' />}
-        {loading && <div>LOADING....</div>}
+        <CardsGrid items={items} title='' />
         {error !== '' && <div>{errorMsg}</div>}
       </section>
     </div>

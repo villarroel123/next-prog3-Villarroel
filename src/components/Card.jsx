@@ -14,7 +14,7 @@ const Card = ({ id, name, rating, image }) => {
         <h3>
             {name}
         </h3>
-        <p className='mb-4 text-sm leading-6 text-black'>Rating es {rating}</p>
+        <p className='mb-4 text-sm leading-6 text-black'>Rating: {rating}</p>
 
         <div className='flex justify-center items-center mt-10'>
             <Link

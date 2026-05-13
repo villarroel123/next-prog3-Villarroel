@@ -14,7 +14,6 @@ const NavBar=()=>{
             link: "/receta"
         }
     ]
-
     return(
         <header className="flex justify-between items-center p-5 bg-white shadow-md">
            <div className="font-bold text-xl">
