@@ -61,6 +61,7 @@ const RecipeContainer=({id})=>{
                     </div>
                 </div>
             </article>
+            
         </section>
     )
 }

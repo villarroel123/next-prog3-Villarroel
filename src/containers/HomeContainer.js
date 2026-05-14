@@ -8,7 +8,8 @@ const HomeContainer = () => {
   const [items, setItems] = useState([]);
   const [error, setError] = useState(false);
   const [errorMsg, setErrorMsg] = useState(false);
-
+  const [loading, setLoading] = useState(true);
+ 
   const handleGetItems = async () => {
     try {
       const response = await axios.get('https://dummyjson.com/recipes?limit=0');
@@ -33,6 +34,7 @@ console.log("Estado de items:", items);
       <Hero/>
       <section className=''>
         <CardsGrid items={items} />
+         {loading && <div>LOADING....</div>}
       </section>
     </div>
   );
