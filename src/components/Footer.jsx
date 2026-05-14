@@ -7,9 +7,9 @@ const Footer=()=>{
     ];
 
     return(
-        <footer className="flex flex-col items-center justify-center bg-gray-900 text-white py-10">
+        <footer className="flex flex-col items-center justify-center bg-[#432b38] text-white py-10">
             <div className="flex flex-col items-center justify-center gap-4">
-                <h3 className="text-2xl font-bold text-yellow-500">Kichenly</h3>
+                <h3 className="text-2xl font-bold text-white font-rowdies">Kichenly</h3>
                 <p className="text-gray-400 text-center">
                     Hacé de cada comida un momento especial.
                 </p>
@@ -21,7 +21,7 @@ const Footer=()=>{
                                 href={red.link} 
                                 target="_blank" 
                                 rel="noopener noreferrer"
-                                className="text-2xl hover:text-yellow-500 transition-colors"
+                                className="text-xl hover:text-[#736a6e] transition-colors"
                             >
                                 <i className={`fa-brands ${red.icon}`}></i>
                             </a>
