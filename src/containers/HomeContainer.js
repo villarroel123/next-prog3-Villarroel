@@ -33,7 +33,6 @@ console.log("Estado de items:", items);
       <Hero/>
       <section className=''>
         <CardsGrid items={items} />
-        {error !== '' && <div>{errorMsg}</div>}
       </section>
     </div>
   );

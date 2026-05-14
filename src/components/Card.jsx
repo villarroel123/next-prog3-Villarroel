@@ -7,7 +7,7 @@ import React from 'react'
 const Card = ({ id, name, rating, image, difficulty }) => {
 
   return (
-    <article className=''>
+    <article className='transition-transform duration-300 hover:scale-101'>
         <div className='max-w-sm overflow-hidden rounded-xl shadow-lg'>
           <Image 
           src={image}
@@ -17,8 +17,8 @@ const Card = ({ id, name, rating, image, difficulty }) => {
           sizes="50vw"
           className="w-full h-auto object-cover"
           />
-          <div className='group p-5 hover:bg-[#9AB87A] hover:text-white'>
-              <h3 className='text-[#432b38] group-hover:text-white'>
+          <div className='group p-5 hover:bg-[#9AB87A] hover:text-white transition-colors cursor-pointer'>
+              <h3 className='text-[#432b38] group-hover:text-white font-crimson text-xl'>
               {name}
               </h3>
               <p className='text-[#736a6e] group-hover:text-white'>{difficulty}</p>
