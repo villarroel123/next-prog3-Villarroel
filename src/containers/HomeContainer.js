@@ -30,7 +30,7 @@ console.log("Estado de items:", items);
   return (
     <div>
       <section className=''>
-        <CardsGrid items={items} title='' />
+        <CardsGrid items={items} />
         {error !== '' && <div>{errorMsg}</div>}
       </section>
     </div>
