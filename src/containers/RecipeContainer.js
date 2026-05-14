@@ -24,7 +24,7 @@ const RecipeContainer=({id})=>{
     },[]);
 
     return(
-        <section className=" bg-[url('/assets/images/2026-recetas-detalle.jpg')] bg-cover bg-center bg-no-repeat min-h-screen w-full flex items-center justify-center ">
+        <section className=" bg-[url('/assets/images/2026-recetas-detalle.jpg')] bg-cover bg-center bg-no-repeat min-h-screen w-full flex items-center justify-center pt-5 pb-5">
             <article className='flex items-center justify-center p-2 w-4/5 mx-auto gap-20'>
                 <div className='flex flex-col'>
                     <h2 className=' font-rowdies text-4xl text-[#475841]'>{item.name}</h2>
@@ -56,8 +56,8 @@ const RecipeContainer=({id})=>{
                         )}
                     </div>
                     <div className='flex gap-5 items-center justify-center mt-5 text-white'>
-                        <p>{item.rating}</p>
-                        <p>{item.difficulty}</p>
+                        <p>Rating: {item.rating}</p>
+                        <p>Difficulty: {item.difficulty}</p>
                     </div>
                 </div>
             </article>

@@ -1,5 +1,6 @@
 'use client'
 import CardsGrid from "@/components/CardsGrid";
+import Hero from "@/components/Hero";
 import axios from 'axios';
 import { useState, useEffect } from "react";
 
@@ -29,6 +30,7 @@ const HomeContainer = () => {
 console.log("Estado de items:", items);
   return (
     <div>
+      <Hero/>
       <section className=''>
         <CardsGrid items={items} />
         {error !== '' && <div>{errorMsg}</div>}
